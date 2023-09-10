@@ -1,8 +1,11 @@
 function fibonacci(num) {
-	let firstVal = 0;
-	let secondVal = 1;
-	if(num==1)return 0;
-	if(num==2)return 1;
+	if (num <= 0) {
+        return 0;
+    } else if (num === 1) {
+        return 1;
+    } else {
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
 	
 
 }
